@@ -1,15 +1,14 @@
 # DCImGui
 
-The version of imgui is v1.92.2b from the docking branch.
+Update sources:
 
-Update DCimGui sources:
+`dcimgui` files sources where generate by [dcimgui](https://github.com/dearimgui/dear_bindings).
 
-- `dcimgui` files where generate by [dcimgui](https://github.com/dearimgui/dear_bindings)
-- `imgui` files where taken from [dear imgui](https://github.com/ocornut/imgui)
+`imgui` files sources where taken from [dear imgui](https://github.com/ocornut/imgui) don't forget the sdl3 gpu backend sources files.
 
-**NOTE:** "imgui_impl_sdlgpu3.h/.cpp" files where generate using the command:
+**NOTE:** "imgui_impl_sdlgpu3.h/.cpp" files where generate using the following commands (make sure to clone imgui next to dear_bindings).
 
 ```
-python dear_bindings.py --backend --include ../imgui-1.92/imgui.h -o dcimgui_impl_sdlgpu3 ../imgui/backends/imgui_impl_sdlgpu3.h 
+python dear_bindings.py --backend --include ../imgui/imgui.h -o dcimgui_impl_sdlgpu3 ../imgui/backends/imgui_impl_sdlgpu3.h 
 ```
 
